@@ -1,0 +1,13 @@
+MariaDB y phpMyAdmin
+Descargar la imagen de MariaDB desde Docker Hub:
+
+
+docker container run `
+-dp 3306:3306 `
+--name mariadb `
+--env MARIADB_USER=example-user `
+--env MARIADB_PASSWORD=user-password `
+--env MARIADB_ROOT_PASSWORD=root-secret-password `
+--env MARIADB_DATABASE=mariadb `
+--volume mariadb-phpmyadmin:/var/lib/mysql ` 
+mariadb
