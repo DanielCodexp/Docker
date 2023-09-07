@@ -1,6 +1,9 @@
 MariaDB y phpMyAdmin
-Descargar la imagen de MariaDB desde Docker Hub:
+**Descargar la imagen de MariaDB desde Docker Hub:
 
+docker pull mariadb
+
+*****Creamos un contenedor con el puerto y el volumen.
 
 docker container run `
 -dp 3306:3306 `
@@ -11,3 +14,5 @@ docker container run `
 --env MARIADB_DATABASE=mariadb `
 --volume mariadb-phpmyadmin:/var/lib/mysql ` 
 mariadb
+
+instalamos apache 
